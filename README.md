@@ -3,9 +3,9 @@ AngularJS loading indicator directives
 > Highly customizable directives to indicate loading in your app
 
 ## Getting Started
-Install via NPM:
+Install via Bower:
 ```shell
-npm install any-loader-ng --save-dev
+bower install any-loader-ng --save-dev
 ```
 
 Add Any Loader to your AngularJS module:
