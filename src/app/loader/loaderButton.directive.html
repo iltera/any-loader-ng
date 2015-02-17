@@ -1,0 +1,6 @@
+<button class="loader-button" ng-disabled="cfg.isLoading || cfg.isSuccess || cfg.isFail">
+  <span ng-hide="cfg.isLoading || cfg.isSuccess || cfg.isFail">{{cfg.label}}</span>
+  <span ng-show="!cfg.isLoading && cfg.isSuccess">{{cfg.successMsg}}</span>
+  <span ng-show="!cfg.isLoading && cfg.isFail">{{cfg.failMsg}}</span>
+  <any-loader cfg="cfg"></any-loader>
+</button>
