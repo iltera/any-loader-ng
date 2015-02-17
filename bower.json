@@ -1,15 +1,16 @@
 {
   "name": "any-loader-ng",
   "version": "0.0.1",
-  "homepage": "https://github.com/intridea/",
-  "description": "AngularJS loader directive.",
+  "main": "./dist/any-loader-ng.js",
+  "homepage": "https://github.com/intridea/any-loader-ng",
+  "description": "AngularJS loading indicator directives.",
   "license": "MIT",
   "private": true,
   "dependencies": {
+  },
+  "devDependencies": {
     "angular": "1.3.3",
     "angular-mocks": "1.3.3",
     "fontawesome": "~4.2.0"
-  },
-  "devDependencies": {
   }
 }
