@@ -40,13 +40,13 @@ Markup:
 ```javascript
 var buttonConfig = {
   "label": "Load Something",
-  "size": null,
-  "iconClass": null,
+  "size": null, // optional
+  "iconClass": null, // optional
   "isLoading": false,
   "isSuccess": false, // optional (but requires successMsg if used)
   "isFail": false, // optional (but requires failMsg if used)
-  "successMsg": "Success!",
-  "failMsg": "Failed :(",
+  "successMsg": "Success!", // optional (required with isSuccess)
+  "failMsg": "Failed :(", // optional (required with isFail)
 };
 ```
 Markup:
