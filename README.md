@@ -13,6 +13,11 @@ Add Any Loader to your AngularJS module:
 angular.module('myApp', ['anyLoader']);
 ```
 
+### Dependencies
+This module depends on and tested with:
+* AngularJS v1.3.3
+* Font Awesome v4.2.0
+
 ## Examples
 There are two directives packaged in this module: `<any-loader>` and `<loader-button>`. `<any-loader>` is a stand-alone spinner icon to be placed anywhere in your application. `<loader-button>` is an enhanced `<button>` element that indicates loading with optional success and fail messages that replace the button text.
 
