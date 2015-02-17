@@ -1,1 +1,1 @@
-angular.module('anyLoader', ['templates']);
+angular.module('anyLoader', ['anyLoaderTemplates']);

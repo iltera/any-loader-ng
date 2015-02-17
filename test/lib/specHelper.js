@@ -6,7 +6,7 @@ var $rootScope,
     $httpBackend;
 
 beforeEach(function() {
-  module('templates');
+  module('anyLoaderTemplates');
   module('anyLoader');
 
   inject(function(_$rootScope_, _$controller_, _$httpBackend_) {

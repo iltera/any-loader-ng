@@ -59,7 +59,7 @@ module.exports = function (grunt) {
     // --------------------------------------------------
     html2js: {
       options: {
-        module: 'templates',
+        module: 'anyLoaderTemplates',
         rename: function (moduleName) {
           return moduleName.replace('app', 'views');
         },

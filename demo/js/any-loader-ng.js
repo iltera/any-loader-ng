@@ -4,7 +4,7 @@
   @author: Intridea Inc.
   @link: https://github.com/intridea/any-loader-ng.git
 */
-angular.module('templates', ['views/loader/anyLoader.directive.html', 'views/loader/loaderButton.directive.html']);
+angular.module('anyLoaderTemplates', ['views/loader/anyLoader.directive.html', 'views/loader/loaderButton.directive.html']);
 
 angular.module("views/loader/anyLoader.directive.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("views/loader/anyLoader.directive.html",
@@ -23,7 +23,7 @@ angular.module("views/loader/loaderButton.directive.html", []).run(["$templateCa
     "</button>");
 }]);
 
-angular.module('anyLoader', ['templates']);
+angular.module('anyLoader', ['anyLoaderTemplates']);
 (function() {
   'use strict';
 
