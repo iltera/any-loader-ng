@@ -1,6 +1,6 @@
 {
   "name": "any-loader-ng",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Intridea Inc.",
   "description": "AngularJS loading indicator directives.",
   "repository": {
