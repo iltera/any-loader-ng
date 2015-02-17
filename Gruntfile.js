@@ -113,7 +113,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          './.tmp/js/app.annotated.js': ['<%= files.js.src %>'],
+          './.tmp/js/app.annotated.js': ['<%= files.js.module %>'],
         },
       },
     },
@@ -350,8 +350,8 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:dist',
       'ngAnnotate:dist',
-      'uglify:dist',
       'html2js',
+      'uglify:dist',
       'concat:dist',
       'jshint',
       'test',
