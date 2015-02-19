@@ -1,4 +1,4 @@
-# any-loader-ng
+# any-loader-ng v0.0.3
 AngularJS loading indicator directives
 > Highly customizable directives to indicate loading in your app
 
