@@ -28,6 +28,7 @@
       isFail: false,
       successMsg: 'Success!',
       failMsg: 'Failed :(',
+      btnClass: 'special-btn',
     };
     vm.buttonNoMsgConfig = {
       label: 'Load Something',

@@ -20,6 +20,7 @@
      * @param {string} cfg.successMsg (optional) The button text when isSuccess is true
      * @param {string} cfg.failMsg (optional) The button text when isFail is true
      * @param {string} cfg.iconClass (optional) The css class for the icon
+     * @param {string} cfg.btnClass (optional) The css class for the <button> element
      */
     return {
       restrict: 'AE',
