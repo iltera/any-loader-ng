@@ -47,6 +47,7 @@ var buttonConfig = {
   "isFail": false, // optional (but requires failMsg if used)
   "successMsg": "Success!", // optional (required with isSuccess)
   "failMsg": "Failed :(", // optional (required with isFail)
+  "btnClass": "special-btn-class", // optional
 };
 ```
 Markup:
