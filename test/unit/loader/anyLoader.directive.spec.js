@@ -1,6 +1,6 @@
 'use strict';
 
-describe('loader Directive', function() {
+describe('<any-loader> directive', function() {
   var $compile,
     element,
     compiled,
@@ -18,14 +18,9 @@ describe('loader Directive', function() {
     scope = $rootScope.$new();
 
     scope.loaderConfig = {
-      label: 'Load Something',
+      isLoading: false,
       size: '3em',
       iconClass: 'fa-refresh',
-      isLoading: false,
-      isSuccess: false,
-      isFail: false,
-      successMsg: 'Success!',
-      failMsg: 'Failed :(',
     };
 
     element = angular.element('<any-loader cfg="loaderConfig"></any-loader>');
@@ -34,7 +29,7 @@ describe('loader Directive', function() {
     scope.$digest();
   });
 
-  describe('any loader', function() {
+  describe('isolated scope', function() {
     var isoScope;
 
     beforeEach(function() {
