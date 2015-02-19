@@ -1,7 +1,7 @@
 {
   "name": "any-loader-ng",
-  "version": "0.0.2",
-  "main": "./dist/any-loader-ng.js",
+  "version": "0.0.3",
+  "main": "./dist/any-loader-ng.min.js",
   "homepage": "https://github.com/intridea/any-loader-ng",
   "description": "AngularJS loading indicator directives.",
   "keywords": ["angularjs", "directive", "loader", "loading"],
@@ -14,5 +14,11 @@
     "fontawesome": "~4.2.0"
   },
   "_source": "git@github.com:intridea/any-loader-ng.git",
-  "ignore": []
+  "ignore": [
+    "demo",
+    "src",
+    "test",
+    "Gruntfile.js",
+    "karma.config.js"
+  ]
 }

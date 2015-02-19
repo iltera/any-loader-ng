@@ -1,6 +1,6 @@
 /*!
   AngularJS loading indicator directives.
-  @version: 0.0.1
+  @version: 0.0.3
   @author: Intridea Inc.
   @link: https://github.com/intridea/any-loader-ng.git
 */
@@ -15,7 +15,7 @@ angular.module("views/loader/anyLoader.directive.html", []).run(["$templateCache
 
 angular.module("views/loader/loaderButton.directive.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("views/loader/loaderButton.directive.html",
-    "<button class=\"loader-button\" ng-disabled=\"cfg.isLoading || cfg.isSuccess || cfg.isFail\">\n" +
+    "<button class=\"loader-button {{cfg.btnClass}}\" ng-disabled=\"cfg.isLoading || cfg.isSuccess || cfg.isFail\">\n" +
     "  <span ng-hide=\"cfg.isLoading || cfg.isSuccess || cfg.isFail\">{{cfg.label}}</span>\n" +
     "  <span ng-show=\"!cfg.isLoading && cfg.isSuccess\">{{cfg.successMsg}}</span>\n" +
     "  <span ng-show=\"!cfg.isLoading && cfg.isFail\">{{cfg.failMsg}}</span>\n" +
@@ -79,6 +79,7 @@ angular.module('anyLoader', ['anyLoaderTemplates']);
      * @param {string} cfg.successMsg (optional) The button text when isSuccess is true
      * @param {string} cfg.failMsg (optional) The button text when isFail is true
      * @param {string} cfg.iconClass (optional) The css class for the icon
+     * @param {string} cfg.btnClass (optional) The css class for the <button> element
      */
     return {
       restrict: 'AE',
